@@ -6,7 +6,11 @@ app.engine('handlebars', exphbs({defaultLayout:'main'}))
 app.set('view engine', 'handlebars')
 
 app.get('/', function(req, res){
-res.render('index')
+  var luckyNumber = Math.round(Math.random() * 10)
+res.render('index', {
+  luckyNumber: luckyNumber
+
+})
 })
 
 app.get('/about', function(req, res){
