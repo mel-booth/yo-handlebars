@@ -1,8 +1,12 @@
 var express = require ('express')
 var app = express()
+var exphbs = require ('express-handlebars')
+
+app.engine('handlebars', exphbs({defaultLayout:'main'}))
+app.set('view engine', 'handlebars')
 
 app.get('/', function(req, res){
-res.send('hallelujah, it works!')
+res.render('index')
 })
 
 app.use('/public', express.static('public'))
