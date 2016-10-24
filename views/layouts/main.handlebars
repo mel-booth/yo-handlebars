@@ -5,7 +5,18 @@
   </head>
   <body>
 
-    {{{body}}}
+    <!-- NOTE inline styling is a massive no-no, just for the purport of this example -->
+
+    <div style="position: absolute; top: 0; height: 40px;">
+      <h3>This is a HEADER</h3>
+    </div>
+    <div style="margin-top: 60px;">
+      {{{body}}}      
+    </div>
+
+    <div style="position: absolute; bottom: 0; height: 40px;">
+      <h3>This is a FOOTER</h3>
+    </div>
 
   </body>
 </html>
