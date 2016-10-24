@@ -9,6 +9,10 @@ app.get('/', function(req, res){
 res.render('index')
 })
 
+app.get('/', function(req, res){
+  res.render('about')
+})
+
 app.use('/public', express.static('public'))
 
 var port = Number(process.env.PORT || 3000)
