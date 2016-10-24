@@ -1,0 +1,23 @@
+{
+  "name": "yo-handlebars",
+  "version": "1.0.0",
+  "description": "Playing with express and handlebars",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mel-booth/yo-handlebars.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mel-booth/yo-handlebars/issues"
+  },
+  "homepage": "https://github.com/mel-booth/yo-handlebars#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
